@@ -17,3 +17,7 @@ function sizeImage() {
   imageBG.style.height = height+"px";
   container.style.height = height+"px";
 };
+
+
+
+//https://stackoverflow.com/questions/67579549/how-to-add-a-css-animation-on-a-specific-point-in-a-picture
