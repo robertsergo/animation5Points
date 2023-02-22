@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #cfd9df;
+    margin: 0;
+  }
+  #container {
+    position: relative;
+   /* width: $width;
+    height: $height;*/
+  }
+  #bg {
+    position: absolute;
+   /* width: $width;
+    height: $height;*/
+  }
+  #circle {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    background-color: rgba(255, 82, 82, 1);
+    border-radius: 50%;
+    animation: pulse-red 1.9s infinite;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+  }
+  
+  @keyframes pulse-red {
+    0% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    }
+  
+    80% {
+      transform: scale(1);
+      box-shadow: 0 0 0 11px rgba(255, 82, 82, 0);
+    }
+  
+    100% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+  }
